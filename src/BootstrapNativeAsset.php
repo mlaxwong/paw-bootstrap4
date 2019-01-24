@@ -10,7 +10,4 @@ class BootstrapNativeAsset extends AssetBundle
         ['polyfill.js', 'position' => \yii\web\View::POS_HEAD],
         'bootstrap-native-v4.js',
     ];
-    public $depends = [
-        \paw\bootstrap4\BootstrapNativeAsset::class,
-    ];
 }
