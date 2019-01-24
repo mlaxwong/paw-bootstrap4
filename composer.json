@@ -1,0 +1,22 @@
+{
+    "name": "mlaxwong/paw-bootstrap4",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mlax Wong",
+            "email": "mlaxwong@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "paw\\bootstrap4\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "mlaxwong/paw": "dev-master",
+        "npm-asset/bootstrap.native": "^2.0",
+        "npm-asset/bootstrap": "^4.2"
+    }
+}
