@@ -15,7 +15,6 @@
     },
     "require": {
         "php": ">=5.4.0",
-        "mlaxwong/paw": "dev-master",
         "npm-asset/bootstrap.native": "^2.0",
         "npm-asset/bootstrap": "^4.2"
     }
