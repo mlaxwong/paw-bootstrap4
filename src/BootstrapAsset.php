@@ -11,5 +11,6 @@ class BootstrapAsset extends AssetBundle
     ];
     public $depends = [
         \paw\bootstrap4\BootstrapNativeAsset::class,
+        \paw\bootstrap4\BootstrapDatePickerStyleAsset::class,
     ];
 }
