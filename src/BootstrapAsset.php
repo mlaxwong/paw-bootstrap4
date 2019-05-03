@@ -5,7 +5,6 @@ use yii\web\AssetBundle;
 
 class BootstrapAsset extends AssetBundle
 {
-    public $sourcePath = '@npm/bootstrap/dist';
     public $css = [
         'css/bootstrap.css',
     ];
@@ -13,4 +12,9 @@ class BootstrapAsset extends AssetBundle
         \paw\bootstrap4\BootstrapNativeAsset::class,
         \paw\bootstrap4\BootstrapDatePickerStyleAsset::class,
     ];
+    public function init()
+    {
+        parent::init();
+        $this->sourcePath = dirname(__DIR__) . '/dist/bootstrap';
+    }
 }

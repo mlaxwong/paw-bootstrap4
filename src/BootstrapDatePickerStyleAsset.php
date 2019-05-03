@@ -10,14 +10,14 @@ class BootstrapDatePickerStyleAsset extends AssetBundle
     public function init()
     {
         parent::init();
-        $this->sourcePath = dirname(__DIR__) . '/static';
+        $this->sourcePath = dirname(__DIR__) . '/dist/bootstrap.detetimpicker';
 
         if ($this->minify === null) {
             $this->minify = (bool) !YII_DEBUG;
         }
 
         $this->css = [
-            'css/' . ($this->minify ? 'bootstrap-datetimepicker.min.css' : 'bootstrap-datetimepicker.css'),
+            ($this->minify ? 'bootstrap-datetimepicker.min.css' : 'bootstrap-datetimepicker.css'),
         ];
     }
 }
